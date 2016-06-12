@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03540350-06E9-4386-8D16-39EADD66FC21}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Pet_Na_Net.My.MyApplication</StartupObject>
+    <RootNamespace>Pet_Na_Net</RootNamespace>
+    <AssemblyName>Pet Na Net</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Pet Na Net.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Pet Na Net.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D3FDE8DFC137D86D3A2B4AB8DAEE8669B372301D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Pet Na Net_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BC\ServicoBC.vb" />
+    <Compile Include="DAO\ServicoDAO.vb" />
+    <Compile Include="Enums\StatusServico.vb" />
+    <Compile Include="Enums\TipoFuncionario.vb" />
+    <Compile Include="Enums\TipoServico.vb" />
+    <Compile Include="Models\Servico.vb" />
+    <Compile Include="Utils\GenericUtils.vb" />
+    <Compile Include="BC\ProdutoBC.vb" />
+    <Compile Include="BC\PetBC.vb" />
+    <Compile Include="BC\VeterinarioBC.vb" />
+    <Compile Include="BC\FuncionarioBC.vb" />
+    <Compile Include="BC\ClienteBC.vb" />
+    <Compile Include="BC\FornecedorBC.vb" />
+    <Compile Include="DAO\ItemDAO.vb" />
+    <Compile Include="DAO\MovimentoDAO.vb" />
+    <Compile Include="DAO\NotaFiscalDAO.vb" />
+    <Compile Include="DAO\PetDAO.vb" />
+    <Compile Include="DAO\FuncionarioDAO.vb" />
+    <Compile Include="DAO\FornecedorDAO.vb" />
+    <Compile Include="DAO\ClienteDAO.vb" />
+    <Compile Include="DAO\Connection.vb" />
+    <Compile Include="DAO\ProdutoDAO.vb" />
+    <Compile Include="Enums\StatusCadastro.vb" />
+    <Compile Include="Enums\TipoMovimento.vb" />
+    <Compile Include="Models\Item.vb" />
+    <Compile Include="Models\Movimento.vb" />
+    <Compile Include="Models\NotaFiscal.vb" />
+    <Compile Include="Models\Pessoa.vb" />
+    <Compile Include="Views\AlterarPerfil.Designer.vb">
+      <DependentUpon>AlterarPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AlterarPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BuscaCliente.Designer.vb">
+      <DependentUpon>BuscaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BuscaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BuscaFornecedor.Designer.vb">
+      <DependentUpon>BuscaFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BuscaFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BuscaNF.Designer.vb">
+      <DependentUpon>BuscaNF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BuscaNF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BuscaServico.Designer.vb">
+      <DependentUpon>BuscaServico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BuscaServico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CadastroFuncionario.Designer.vb">
+      <DependentUpon>CadastroFuncionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroFuncionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CadastroPet.Designer.vb">
+      <DependentUpon>CadastroPet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroPet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Cliente.vb" />
+    <Compile Include="Views\CadastroCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CadastroCliente.Designer.vb">
+      <DependentUpon>CadastroCliente.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Fornecedor.vb" />
+    <Compile Include="Models\Funcionario.vb" />
+    <Compile Include="Models\PessoaJuridica.vb" />
+    <Compile Include="Models\PessoaFisica.vb" />
+    <Compile Include="Models\Produto.vb" />
+    <Compile Include="Enums\TipoPet.vb" />
+    <Compile Include="Enums\TipoProduto.vb" />
+    <Compile Include="Models\Veterinario.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Models\Pet.vb" />
+    <Compile Include="Enums\TipoCliente.vb" />
+    <Compile Include="PetNaNetDatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PetNaNetDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroServico.Designer.vb">
+      <DependentUpon>CadastroServico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroServico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\InfoCliente.Designer.vb">
+      <DependentUpon>InfoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InfoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\InfoFornecedor.Designer.vb">
+      <DependentUpon>InfoFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InfoFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CadastroFornecedor.Designer.vb">
+      <DependentUpon>CadastroFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CadastroNF.Designer.vb">
+      <DependentUpon>CadastroNF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroNF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\InfoNF.Designer.vb">
+      <DependentUpon>InfoNF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InfoNF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\InfoServico.Designer.vb">
+      <DependentUpon>InfoServico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InfoServico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoginUsuario.Designer.vb">
+      <DependentUpon>LoginUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AlterarPerfil.resx">
+      <DependentUpon>AlterarPerfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BuscaCliente.resx">
+      <DependentUpon>BuscaCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BuscaFornecedor.resx">
+      <DependentUpon>BuscaFornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BuscaNF.resx">
+      <DependentUpon>BuscaNF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BuscaServico.resx">
+      <DependentUpon>BuscaServico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CadastroCliente.resx">
+      <DependentUpon>CadastroCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CadastroFuncionario.resx">
+      <DependentUpon>CadastroFuncionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CadastroPet.resx">
+      <DependentUpon>CadastroPet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CadastroServico.resx">
+      <DependentUpon>CadastroServico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\InfoCliente.resx">
+      <DependentUpon>InfoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CadastroFornecedor.resx">
+      <DependentUpon>CadastroFornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CadastroNF.resx">
+      <DependentUpon>CadastroNF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\InfoFornecedor.resx">
+      <DependentUpon>InfoFornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\InfoNF.resx">
+      <DependentUpon>InfoNF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\InfoServico.resx">
+      <DependentUpon>InfoServico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginUsuario.resx">
+      <DependentUpon>LoginUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Pet Na Net_TemporaryKey.pfx" />
+    <None Include="PetNaNetDatabaseDataSet.xsc">
+      <DependentUpon>PetNaNetDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PetNaNetDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PetNaNetDatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PetNaNetDatabaseDataSet.xss">
+      <DependentUpon>PetNaNetDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Imagem1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="PetNaNetDatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PetNaNetDatabase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>PetNaNetDatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="Query Movimento Completo.sql" />
+    <None Include="Resources\Bloquear.png" />
+    <None Include="Resources\Info.png" />
+    <None Include="Resources\Novo Pet.png" />
+    <None Include="Resources\Busca.png" />
+    <None Include="Resources\Novo Cliente.png" />
+    <None Include="Resources\Adicionar.png" />
+    <None Include="Resources\Remover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
