@@ -184,7 +184,7 @@ Partial Class AlterarPerfil
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Pet_Na_Net.My.Resources.Resources.Busca
+        Me.PictureBox1.Image = Global.Pet_Na_Net.My.Resources.Resources.AlterarPerfil
         Me.PictureBox1.Location = New System.Drawing.Point(11, 10)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(50, 50)

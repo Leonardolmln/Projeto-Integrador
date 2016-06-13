@@ -366,6 +366,11 @@
       <DependentUpon>PetNaNetDatabase.mdf</DependentUpon>
     </Content>
     <Content Include="Query Movimento Completo.sql" />
+    <None Include="Resources\fornecedor.png" />
+    <None Include="Resources\AlterarPerfil.png" />
+    <None Include="Resources\Funcionario.png" />
+    <None Include="Resources\Novo Serviço.png" />
+    <None Include="Resources\NovaNF.png" />
     <None Include="Resources\Bloquear.png" />
     <None Include="Resources\Info.png" />
     <None Include="Resources\Novo Pet.png" />
