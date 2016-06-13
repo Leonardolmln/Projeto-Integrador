@@ -19,7 +19,7 @@
             End If
 
             If (currentCliente Is Nothing) Then
-                MsgBox("Não foi encontrado nenhum cliente com a pesquisa realizada", vbInformation)
+                MsgBox("Não foi encontrado nenhum cliente com a pesquisa realizada", vbInformation Or vbMsgBoxSetForeground)
                 Exit Sub
             Else : InfoCliente.Show()
             End If

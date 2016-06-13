@@ -18,6 +18,8 @@
     Private Sub CPFRB_CheckedChanged(sender As Object, e As EventArgs) Handles CPFRB.CheckedChanged
         If (CPFRB.Checked = True) Then
             CPFMTF.Enabled = True
+            MatriculaMTF.Text = ""
+            NomeTF.Text = ""
         Else : CPFMTF.Enabled = False
         End If
     End Sub
@@ -25,6 +27,8 @@
     Private Sub NomeRB_CheckedChanged(sender As Object, e As EventArgs) Handles NomeRB.CheckedChanged
         If (NomeRB.Checked = True) Then
             NomeTF.Enabled = True
+            MatriculaMTF.Text = ""
+            CPFMTF.Text = ""
         Else : NomeTF.Enabled = False
         End If
     End Sub
@@ -32,6 +36,8 @@
     Private Sub MatriculaRB_CheckedChanged(sender As Object, e As EventArgs) Handles MatriculaRB.CheckedChanged
         If (MatriculaRB.Checked = True) Then
             MatriculaMTF.Enabled = True
+            NomeTF.Text = ""
+            CPFMTF.Text = ""
         Else : MatriculaMTF.Enabled = False
         End If
     End Sub
@@ -44,7 +50,7 @@
             End If
 
             If (currentFuncionario Is Nothing) Then
-                MsgBox("Não foi encontrado nenhum cliente com a pesquisa realizada", vbInformation)
+                MsgBox("Não foi encontrado nenhum cliente com a pesquisa realizada", vbInformation Or vbMsgBoxSetForeground)
                 Exit Sub
             Else
                 FuncionarioLB.Text = currentFuncionario.Matricula + " - " + currentFuncionario.Nome

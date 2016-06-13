@@ -3,7 +3,10 @@
     Private MovimentoDAOInstance As New MovimentoDAO
     Private NotaFiscalDAOInstance As New NotaFiscalDAO
     Private FornecedorDAOInstance As New FornecedorDAO
-    
+    Private ProdutoDAOInstance As New ProdutoDAO
+    Private ItemDAOInstance As New ItemDAO
+
+
     Private Sub InfoNF_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ProdutosDT.Rows.Add(4)
     End Sub
@@ -33,6 +36,5 @@
         Next
 
     End Sub
-
 
 End Class

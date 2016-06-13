@@ -24,74 +24,74 @@ Partial Class Home
     Private Sub InitializeComponent()
         Me.ClienteGB = New System.Windows.Forms.GroupBox()
         Me.NovoPanel = New System.Windows.Forms.Panel()
+        Me.NovoIMG = New System.Windows.Forms.PictureBox()
         Me.NovoLB = New System.Windows.Forms.Label()
         Me.BuscaPanel = New System.Windows.Forms.Panel()
+        Me.BuscaIMG = New System.Windows.Forms.PictureBox()
         Me.BuscaLB = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.AcessoGB = New System.Windows.Forms.GroupBox()
         Me.AlterarPerfilPanel = New System.Windows.Forms.Panel()
+        Me.AlterarPerfilIMG = New System.Windows.Forms.PictureBox()
         Me.AlterarPerfilLB = New System.Windows.Forms.Label()
         Me.IncluirFuncPanel = New System.Windows.Forms.Panel()
+        Me.IncluirFuncIMG = New System.Windows.Forms.PictureBox()
         Me.IncluirFuncLB = New System.Windows.Forms.Label()
         Me.ServicoGB = New System.Windows.Forms.GroupBox()
         Me.NovoServPanel = New System.Windows.Forms.Panel()
+        Me.NovoServIMG = New System.Windows.Forms.PictureBox()
         Me.NovoServLB = New System.Windows.Forms.Label()
         Me.BuscaServPanel = New System.Windows.Forms.Panel()
+        Me.BuscaServIMG = New System.Windows.Forms.PictureBox()
         Me.BuscaServLB = New System.Windows.Forms.Label()
         Me.EstoqueGB = New System.Windows.Forms.GroupBox()
         Me.BuscarNFPanel = New System.Windows.Forms.Panel()
+        Me.BuscarNFIMG = New System.Windows.Forms.PictureBox()
         Me.BuscarNFLB = New System.Windows.Forms.Label()
         Me.NovaNFPanel = New System.Windows.Forms.Panel()
+        Me.NovaNFIMG = New System.Windows.Forms.PictureBox()
         Me.NovaNFLB = New System.Windows.Forms.Label()
         Me.NovoFornPanel = New System.Windows.Forms.Panel()
+        Me.NovoFornIMG = New System.Windows.Forms.PictureBox()
         Me.NovoFornLB = New System.Windows.Forms.Label()
         Me.BuscaFornPanel = New System.Windows.Forms.Panel()
+        Me.BuscaFornIMG = New System.Windows.Forms.PictureBox()
         Me.BuscaFornLB = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.NomeLB = New System.Windows.Forms.Label()
         Me.PerfilLB = New System.Windows.Forms.Label()
         Me.MatriculaLB = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.NovoIMG = New System.Windows.Forms.PictureBox()
-        Me.BuscaIMG = New System.Windows.Forms.PictureBox()
-        Me.AlterarPerfilIMG = New System.Windows.Forms.PictureBox()
-        Me.IncluirFuncIMG = New System.Windows.Forms.PictureBox()
-        Me.NovoServIMG = New System.Windows.Forms.PictureBox()
-        Me.BuscaServIMG = New System.Windows.Forms.PictureBox()
-        Me.BuscarNFIMG = New System.Windows.Forms.PictureBox()
-        Me.NovaNFIMG = New System.Windows.Forms.PictureBox()
-        Me.NovoFornIMG = New System.Windows.Forms.PictureBox()
-        Me.BuscaFornIMG = New System.Windows.Forms.PictureBox()
         Me.ClienteGB.SuspendLayout()
         Me.NovoPanel.SuspendLayout()
+        CType(Me.NovoIMG, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BuscaPanel.SuspendLayout()
+        CType(Me.BuscaIMG, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.AcessoGB.SuspendLayout()
         Me.AlterarPerfilPanel.SuspendLayout()
+        CType(Me.AlterarPerfilIMG, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.IncluirFuncPanel.SuspendLayout()
+        CType(Me.IncluirFuncIMG, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ServicoGB.SuspendLayout()
         Me.NovoServPanel.SuspendLayout()
+        CType(Me.NovoServIMG, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BuscaServPanel.SuspendLayout()
+        CType(Me.BuscaServIMG, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.EstoqueGB.SuspendLayout()
         Me.BuscarNFPanel.SuspendLayout()
-        Me.NovaNFPanel.SuspendLayout()
-        Me.NovoFornPanel.SuspendLayout()
-        Me.BuscaFornPanel.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NovoIMG, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BuscaIMG, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AlterarPerfilIMG, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.IncluirFuncIMG, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NovoServIMG, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BuscaServIMG, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BuscarNFIMG, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.NovaNFPanel.SuspendLayout()
         CType(Me.NovaNFIMG, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.NovoFornPanel.SuspendLayout()
         CType(Me.NovoFornIMG, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BuscaFornPanel.SuspendLayout()
         CType(Me.BuscaFornIMG, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ClienteGB
@@ -117,6 +117,16 @@ Partial Class Home
         Me.NovoPanel.Size = New System.Drawing.Size(80, 90)
         Me.NovoPanel.TabIndex = 1
         '
+        'NovoIMG
+        '
+        Me.NovoIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Novo_Cliente
+        Me.NovoIMG.Location = New System.Drawing.Point(17, 31)
+        Me.NovoIMG.Name = "NovoIMG"
+        Me.NovoIMG.Size = New System.Drawing.Size(45, 45)
+        Me.NovoIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.NovoIMG.TabIndex = 1
+        Me.NovoIMG.TabStop = False
+        '
         'NovoLB
         '
         Me.NovoLB.AutoSize = True
@@ -138,15 +148,25 @@ Partial Class Home
         Me.BuscaPanel.Size = New System.Drawing.Size(80, 90)
         Me.BuscaPanel.TabIndex = 0
         '
+        'BuscaIMG
+        '
+        Me.BuscaIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Busca
+        Me.BuscaIMG.Location = New System.Drawing.Point(17, 31)
+        Me.BuscaIMG.Name = "BuscaIMG"
+        Me.BuscaIMG.Size = New System.Drawing.Size(45, 45)
+        Me.BuscaIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.BuscaIMG.TabIndex = 1
+        Me.BuscaIMG.TabStop = False
+        '
         'BuscaLB
         '
         Me.BuscaLB.AutoSize = True
         Me.BuscaLB.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BuscaLB.Location = New System.Drawing.Point(3, 10)
+        Me.BuscaLB.Location = New System.Drawing.Point(6, 10)
         Me.BuscaLB.Name = "BuscaLB"
-        Me.BuscaLB.Size = New System.Drawing.Size(74, 12)
+        Me.BuscaLB.Size = New System.Drawing.Size(65, 12)
         Me.BuscaLB.TabIndex = 0
-        Me.BuscaLB.Text = "Buscar Cadastro"
+        Me.BuscaLB.Text = "Buscar Cliente"
         '
         'Panel2
         '
@@ -182,6 +202,16 @@ Partial Class Home
         Me.AlterarPerfilPanel.Size = New System.Drawing.Size(80, 90)
         Me.AlterarPerfilPanel.TabIndex = 1
         '
+        'AlterarPerfilIMG
+        '
+        Me.AlterarPerfilIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.AlterarPerfil
+        Me.AlterarPerfilIMG.Location = New System.Drawing.Point(17, 31)
+        Me.AlterarPerfilIMG.Name = "AlterarPerfilIMG"
+        Me.AlterarPerfilIMG.Size = New System.Drawing.Size(45, 45)
+        Me.AlterarPerfilIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.AlterarPerfilIMG.TabIndex = 1
+        Me.AlterarPerfilIMG.TabStop = False
+        '
         'AlterarPerfilLB
         '
         Me.AlterarPerfilLB.AutoSize = True
@@ -202,6 +232,16 @@ Partial Class Home
         Me.IncluirFuncPanel.Name = "IncluirFuncPanel"
         Me.IncluirFuncPanel.Size = New System.Drawing.Size(80, 90)
         Me.IncluirFuncPanel.TabIndex = 0
+        '
+        'IncluirFuncIMG
+        '
+        Me.IncluirFuncIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Funcionario
+        Me.IncluirFuncIMG.Location = New System.Drawing.Point(17, 31)
+        Me.IncluirFuncIMG.Name = "IncluirFuncIMG"
+        Me.IncluirFuncIMG.Size = New System.Drawing.Size(45, 45)
+        Me.IncluirFuncIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.IncluirFuncIMG.TabIndex = 1
+        Me.IncluirFuncIMG.TabStop = False
         '
         'IncluirFuncLB
         '
@@ -236,6 +276,16 @@ Partial Class Home
         Me.NovoServPanel.Size = New System.Drawing.Size(80, 90)
         Me.NovoServPanel.TabIndex = 2
         '
+        'NovoServIMG
+        '
+        Me.NovoServIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Novo_Serviço
+        Me.NovoServIMG.Location = New System.Drawing.Point(17, 31)
+        Me.NovoServIMG.Name = "NovoServIMG"
+        Me.NovoServIMG.Size = New System.Drawing.Size(45, 45)
+        Me.NovoServIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.NovoServIMG.TabIndex = 1
+        Me.NovoServIMG.TabStop = False
+        '
         'NovoServLB
         '
         Me.NovoServLB.AutoSize = True
@@ -256,6 +306,16 @@ Partial Class Home
         Me.BuscaServPanel.Name = "BuscaServPanel"
         Me.BuscaServPanel.Size = New System.Drawing.Size(80, 90)
         Me.BuscaServPanel.TabIndex = 0
+        '
+        'BuscaServIMG
+        '
+        Me.BuscaServIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Busca
+        Me.BuscaServIMG.Location = New System.Drawing.Point(17, 31)
+        Me.BuscaServIMG.Name = "BuscaServIMG"
+        Me.BuscaServIMG.Size = New System.Drawing.Size(45, 45)
+        Me.BuscaServIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.BuscaServIMG.TabIndex = 1
+        Me.BuscaServIMG.TabStop = False
         '
         'BuscaServLB
         '
@@ -292,6 +352,16 @@ Partial Class Home
         Me.BuscarNFPanel.Size = New System.Drawing.Size(80, 90)
         Me.BuscarNFPanel.TabIndex = 3
         '
+        'BuscarNFIMG
+        '
+        Me.BuscarNFIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Busca
+        Me.BuscarNFIMG.Location = New System.Drawing.Point(17, 31)
+        Me.BuscarNFIMG.Name = "BuscarNFIMG"
+        Me.BuscarNFIMG.Size = New System.Drawing.Size(45, 45)
+        Me.BuscarNFIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.BuscarNFIMG.TabIndex = 1
+        Me.BuscarNFIMG.TabStop = False
+        '
         'BuscarNFLB
         '
         Me.BuscarNFLB.AutoSize = True
@@ -312,6 +382,16 @@ Partial Class Home
         Me.NovaNFPanel.Name = "NovaNFPanel"
         Me.NovaNFPanel.Size = New System.Drawing.Size(80, 90)
         Me.NovaNFPanel.TabIndex = 2
+        '
+        'NovaNFIMG
+        '
+        Me.NovaNFIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.NovaNF
+        Me.NovaNFIMG.Location = New System.Drawing.Point(17, 31)
+        Me.NovaNFIMG.Name = "NovaNFIMG"
+        Me.NovaNFIMG.Size = New System.Drawing.Size(45, 45)
+        Me.NovaNFIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.NovaNFIMG.TabIndex = 1
+        Me.NovaNFIMG.TabStop = False
         '
         'NovaNFLB
         '
@@ -334,6 +414,16 @@ Partial Class Home
         Me.NovoFornPanel.Size = New System.Drawing.Size(80, 90)
         Me.NovoFornPanel.TabIndex = 1
         '
+        'NovoFornIMG
+        '
+        Me.NovoFornIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.fornecedor
+        Me.NovoFornIMG.Location = New System.Drawing.Point(17, 31)
+        Me.NovoFornIMG.Name = "NovoFornIMG"
+        Me.NovoFornIMG.Size = New System.Drawing.Size(45, 45)
+        Me.NovoFornIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.NovoFornIMG.TabIndex = 1
+        Me.NovoFornIMG.TabStop = False
+        '
         'NovoFornLB
         '
         Me.NovoFornLB.AutoSize = True
@@ -355,6 +445,16 @@ Partial Class Home
         Me.BuscaFornPanel.Size = New System.Drawing.Size(80, 90)
         Me.BuscaFornPanel.TabIndex = 0
         '
+        'BuscaFornIMG
+        '
+        Me.BuscaFornIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Busca
+        Me.BuscaFornIMG.Location = New System.Drawing.Point(17, 31)
+        Me.BuscaFornIMG.Name = "BuscaFornIMG"
+        Me.BuscaFornIMG.Size = New System.Drawing.Size(45, 45)
+        Me.BuscaFornIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.BuscaFornIMG.TabIndex = 1
+        Me.BuscaFornIMG.TabStop = False
+        '
         'BuscaFornLB
         '
         Me.BuscaFornLB.AutoSize = True
@@ -374,6 +474,16 @@ Partial Class Home
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(412, 100)
         Me.Panel4.TabIndex = 0
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.Pet_Na_Net.My.Resources.Resources.Logo
+        Me.PictureBox3.Location = New System.Drawing.Point(11, 8)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(80, 80)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 1
+        Me.PictureBox3.TabStop = False
         '
         'Label3
         '
@@ -423,116 +533,6 @@ Partial Class Home
         Me.MatriculaLB.TabIndex = 0
         Me.MatriculaLB.Text = "Matricula"
         '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.Pet_Na_Net.My.Resources.Resources.Logo
-        Me.PictureBox3.Location = New System.Drawing.Point(11, 8)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(80, 80)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 1
-        Me.PictureBox3.TabStop = False
-        '
-        'NovoIMG
-        '
-        Me.NovoIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Novo_Cliente
-        Me.NovoIMG.Location = New System.Drawing.Point(17, 31)
-        Me.NovoIMG.Name = "NovoIMG"
-        Me.NovoIMG.Size = New System.Drawing.Size(45, 45)
-        Me.NovoIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.NovoIMG.TabIndex = 1
-        Me.NovoIMG.TabStop = False
-        '
-        'BuscaIMG
-        '
-        Me.BuscaIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Busca
-        Me.BuscaIMG.Location = New System.Drawing.Point(17, 31)
-        Me.BuscaIMG.Name = "BuscaIMG"
-        Me.BuscaIMG.Size = New System.Drawing.Size(45, 45)
-        Me.BuscaIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.BuscaIMG.TabIndex = 1
-        Me.BuscaIMG.TabStop = False
-        '
-        'AlterarPerfilIMG
-        '
-        Me.AlterarPerfilIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.AlterarPerfil
-        Me.AlterarPerfilIMG.Location = New System.Drawing.Point(17, 31)
-        Me.AlterarPerfilIMG.Name = "AlterarPerfilIMG"
-        Me.AlterarPerfilIMG.Size = New System.Drawing.Size(45, 45)
-        Me.AlterarPerfilIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.AlterarPerfilIMG.TabIndex = 1
-        Me.AlterarPerfilIMG.TabStop = False
-        '
-        'IncluirFuncIMG
-        '
-        Me.IncluirFuncIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Funcionario
-        Me.IncluirFuncIMG.Location = New System.Drawing.Point(17, 31)
-        Me.IncluirFuncIMG.Name = "IncluirFuncIMG"
-        Me.IncluirFuncIMG.Size = New System.Drawing.Size(45, 45)
-        Me.IncluirFuncIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.IncluirFuncIMG.TabIndex = 1
-        Me.IncluirFuncIMG.TabStop = False
-        '
-        'NovoServIMG
-        '
-        Me.NovoServIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Novo_Serviço
-        Me.NovoServIMG.Location = New System.Drawing.Point(17, 31)
-        Me.NovoServIMG.Name = "NovoServIMG"
-        Me.NovoServIMG.Size = New System.Drawing.Size(45, 45)
-        Me.NovoServIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.NovoServIMG.TabIndex = 1
-        Me.NovoServIMG.TabStop = False
-        '
-        'BuscaServIMG
-        '
-        Me.BuscaServIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Busca
-        Me.BuscaServIMG.Location = New System.Drawing.Point(17, 31)
-        Me.BuscaServIMG.Name = "BuscaServIMG"
-        Me.BuscaServIMG.Size = New System.Drawing.Size(45, 45)
-        Me.BuscaServIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.BuscaServIMG.TabIndex = 1
-        Me.BuscaServIMG.TabStop = False
-        '
-        'BuscarNFIMG
-        '
-        Me.BuscarNFIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Busca
-        Me.BuscarNFIMG.Location = New System.Drawing.Point(17, 31)
-        Me.BuscarNFIMG.Name = "BuscarNFIMG"
-        Me.BuscarNFIMG.Size = New System.Drawing.Size(45, 45)
-        Me.BuscarNFIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.BuscarNFIMG.TabIndex = 1
-        Me.BuscarNFIMG.TabStop = False
-        '
-        'NovaNFIMG
-        '
-        Me.NovaNFIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.NovaNF
-        Me.NovaNFIMG.Location = New System.Drawing.Point(17, 31)
-        Me.NovaNFIMG.Name = "NovaNFIMG"
-        Me.NovaNFIMG.Size = New System.Drawing.Size(45, 45)
-        Me.NovaNFIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.NovaNFIMG.TabIndex = 1
-        Me.NovaNFIMG.TabStop = False
-        '
-        'NovoFornIMG
-        '
-        Me.NovoFornIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.fornecedor
-        Me.NovoFornIMG.Location = New System.Drawing.Point(17, 31)
-        Me.NovoFornIMG.Name = "NovoFornIMG"
-        Me.NovoFornIMG.Size = New System.Drawing.Size(45, 45)
-        Me.NovoFornIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.NovoFornIMG.TabIndex = 1
-        Me.NovoFornIMG.TabStop = False
-        '
-        'BuscaFornIMG
-        '
-        Me.BuscaFornIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Busca
-        Me.BuscaFornIMG.Location = New System.Drawing.Point(17, 31)
-        Me.BuscaFornIMG.Name = "BuscaFornIMG"
-        Me.BuscaFornIMG.Size = New System.Drawing.Size(45, 45)
-        Me.BuscaFornIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.BuscaFornIMG.TabIndex = 1
-        Me.BuscaFornIMG.TabStop = False
-        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -549,43 +549,43 @@ Partial Class Home
         Me.ClienteGB.ResumeLayout(False)
         Me.NovoPanel.ResumeLayout(False)
         Me.NovoPanel.PerformLayout()
+        CType(Me.NovoIMG, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BuscaPanel.ResumeLayout(False)
         Me.BuscaPanel.PerformLayout()
+        CType(Me.BuscaIMG, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.AcessoGB.ResumeLayout(False)
         Me.AlterarPerfilPanel.ResumeLayout(False)
         Me.AlterarPerfilPanel.PerformLayout()
+        CType(Me.AlterarPerfilIMG, System.ComponentModel.ISupportInitialize).EndInit()
         Me.IncluirFuncPanel.ResumeLayout(False)
         Me.IncluirFuncPanel.PerformLayout()
+        CType(Me.IncluirFuncIMG, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ServicoGB.ResumeLayout(False)
         Me.NovoServPanel.ResumeLayout(False)
         Me.NovoServPanel.PerformLayout()
+        CType(Me.NovoServIMG, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BuscaServPanel.ResumeLayout(False)
         Me.BuscaServPanel.PerformLayout()
+        CType(Me.BuscaServIMG, System.ComponentModel.ISupportInitialize).EndInit()
         Me.EstoqueGB.ResumeLayout(False)
         Me.BuscarNFPanel.ResumeLayout(False)
         Me.BuscarNFPanel.PerformLayout()
+        CType(Me.BuscarNFIMG, System.ComponentModel.ISupportInitialize).EndInit()
         Me.NovaNFPanel.ResumeLayout(False)
         Me.NovaNFPanel.PerformLayout()
+        CType(Me.NovaNFIMG, System.ComponentModel.ISupportInitialize).EndInit()
         Me.NovoFornPanel.ResumeLayout(False)
         Me.NovoFornPanel.PerformLayout()
+        CType(Me.NovoFornIMG, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BuscaFornPanel.ResumeLayout(False)
         Me.BuscaFornPanel.PerformLayout()
+        CType(Me.BuscaFornIMG, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NovoIMG, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BuscaIMG, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AlterarPerfilIMG, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.IncluirFuncIMG, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NovoServIMG, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BuscaServIMG, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BuscarNFIMG, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NovaNFIMG, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NovoFornIMG, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BuscaFornIMG, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

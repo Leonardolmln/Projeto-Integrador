@@ -25,8 +25,10 @@ Partial Class InfoCliente
         Me.NomeTF = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.CPFMTF = New System.Windows.Forms.MaskedTextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.CancelarIMG = New System.Windows.Forms.PictureBox()
         Me.AtualizarBT = New System.Windows.Forms.Button()
         Me.TelefoneMTF = New System.Windows.Forms.MaskedTextBox()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -45,6 +47,8 @@ Partial Class InfoCliente
         Me.NomeLB = New System.Windows.Forms.Label()
         Me.CPFLB = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.DeletePetIMG = New System.Windows.Forms.PictureBox()
+        Me.AddPetIMG = New System.Windows.Forms.PictureBox()
         Me.TipoPetCB = New System.Windows.Forms.ComboBox()
         Me.PetCB = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -53,17 +57,15 @@ Partial Class InfoCliente
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.NomePetTF = New System.Windows.Forms.TextBox()
-        Me.DeletePetIMG = New System.Windows.Forms.PictureBox()
-        Me.AddPetIMG = New System.Windows.Forms.PictureBox()
-        Me.CancelarIMG = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.IDPet = New System.Windows.Forms.TextBox()
+        Me.AtualizarPetBT = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.CancelarIMG, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         CType(Me.DeletePetIMG, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AddPetIMG, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CancelarIMG, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'NomeTF
@@ -92,6 +94,16 @@ Partial Class InfoCliente
         Me.Label1.Size = New System.Drawing.Size(232, 25)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Informações do Cliente"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Pet_Na_Net.My.Resources.Resources.Info
+        Me.PictureBox1.Location = New System.Drawing.Point(11, 10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(50, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 7
+        Me.PictureBox1.TabStop = False
         '
         'CPFMTF
         '
@@ -129,6 +141,17 @@ Partial Class InfoCliente
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(357, 334)
         Me.Panel1.TabIndex = 10
+        '
+        'CancelarIMG
+        '
+        Me.CancelarIMG.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CancelarIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Remover
+        Me.CancelarIMG.Location = New System.Drawing.Point(315, 18)
+        Me.CancelarIMG.Name = "CancelarIMG"
+        Me.CancelarIMG.Size = New System.Drawing.Size(20, 20)
+        Me.CancelarIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.CancelarIMG.TabIndex = 26
+        Me.CancelarIMG.TabStop = False
         '
         'AtualizarBT
         '
@@ -279,6 +302,8 @@ Partial Class InfoCliente
         'Panel3
         '
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.AtualizarPetBT)
+        Me.Panel3.Controls.Add(Me.IDPet)
         Me.Panel3.Controls.Add(Me.DeletePetIMG)
         Me.Panel3.Controls.Add(Me.AddPetIMG)
         Me.Panel3.Controls.Add(Me.TipoPetCB)
@@ -291,8 +316,30 @@ Partial Class InfoCliente
         Me.Panel3.Controls.Add(Me.NomePetTF)
         Me.Panel3.Location = New System.Drawing.Point(12, 415)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(357, 165)
+        Me.Panel3.Size = New System.Drawing.Size(357, 193)
         Me.Panel3.TabIndex = 11
+        '
+        'DeletePetIMG
+        '
+        Me.DeletePetIMG.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.DeletePetIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Remover
+        Me.DeletePetIMG.Location = New System.Drawing.Point(314, 18)
+        Me.DeletePetIMG.Name = "DeletePetIMG"
+        Me.DeletePetIMG.Size = New System.Drawing.Size(20, 20)
+        Me.DeletePetIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.DeletePetIMG.TabIndex = 23
+        Me.DeletePetIMG.TabStop = False
+        '
+        'AddPetIMG
+        '
+        Me.AddPetIMG.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.AddPetIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Adicionar
+        Me.AddPetIMG.Location = New System.Drawing.Point(288, 18)
+        Me.AddPetIMG.Name = "AddPetIMG"
+        Me.AddPetIMG.Size = New System.Drawing.Size(20, 20)
+        Me.AddPetIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.AddPetIMG.TabIndex = 22
+        Me.AddPetIMG.TabStop = False
         '
         'TipoPetCB
         '
@@ -305,9 +352,9 @@ Partial Class InfoCliente
         'PetCB
         '
         Me.PetCB.FormattingEnabled = True
-        Me.PetCB.Location = New System.Drawing.Point(136, 18)
+        Me.PetCB.Location = New System.Drawing.Point(171, 18)
         Me.PetCB.Name = "PetCB"
-        Me.PetCB.Size = New System.Drawing.Size(143, 21)
+        Me.PetCB.Size = New System.Drawing.Size(108, 21)
         Me.PetCB.TabIndex = 11
         '
         'Label6
@@ -363,54 +410,28 @@ Partial Class InfoCliente
         Me.NomePetTF.Size = New System.Drawing.Size(199, 20)
         Me.NomePetTF.TabIndex = 12
         '
-        'DeletePetIMG
+        'IDPet
         '
-        Me.DeletePetIMG.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.DeletePetIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Remover
-        Me.DeletePetIMG.Location = New System.Drawing.Point(314, 18)
-        Me.DeletePetIMG.Name = "DeletePetIMG"
-        Me.DeletePetIMG.Size = New System.Drawing.Size(20, 20)
-        Me.DeletePetIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.DeletePetIMG.TabIndex = 23
-        Me.DeletePetIMG.TabStop = False
+        Me.IDPet.Enabled = False
+        Me.IDPet.Location = New System.Drawing.Point(136, 18)
+        Me.IDPet.Name = "IDPet"
+        Me.IDPet.Size = New System.Drawing.Size(30, 20)
+        Me.IDPet.TabIndex = 24
         '
-        'AddPetIMG
+        'AtualizarPetBT
         '
-        Me.AddPetIMG.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.AddPetIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Adicionar
-        Me.AddPetIMG.Location = New System.Drawing.Point(288, 18)
-        Me.AddPetIMG.Name = "AddPetIMG"
-        Me.AddPetIMG.Size = New System.Drawing.Size(20, 20)
-        Me.AddPetIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.AddPetIMG.TabIndex = 22
-        Me.AddPetIMG.TabStop = False
-        '
-        'CancelarIMG
-        '
-        Me.CancelarIMG.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CancelarIMG.Image = Global.Pet_Na_Net.My.Resources.Resources.Remover
-        Me.CancelarIMG.Location = New System.Drawing.Point(315, 18)
-        Me.CancelarIMG.Name = "CancelarIMG"
-        Me.CancelarIMG.Size = New System.Drawing.Size(20, 20)
-        Me.CancelarIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.CancelarIMG.TabIndex = 26
-        Me.CancelarIMG.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Pet_Na_Net.My.Resources.Resources.Info
-        Me.PictureBox1.Location = New System.Drawing.Point(11, 10)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(50, 50)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 7
-        Me.PictureBox1.TabStop = False
+        Me.AtualizarPetBT.Location = New System.Drawing.Point(104, 159)
+        Me.AtualizarPetBT.Name = "AtualizarPetBT"
+        Me.AtualizarPetBT.Size = New System.Drawing.Size(146, 23)
+        Me.AtualizarPetBT.TabIndex = 25
+        Me.AtualizarPetBT.Text = "Atualizar Pet"
+        Me.AtualizarPetBT.UseVisualStyleBackColor = True
         '
         'InfoCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(383, 592)
+        Me.ClientSize = New System.Drawing.Size(383, 620)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
@@ -420,14 +441,14 @@ Partial Class InfoCliente
         Me.Text = "InfoCliente"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.CancelarIMG, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         CType(Me.DeletePetIMG, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AddPetIMG, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CancelarIMG, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -466,4 +487,6 @@ Partial Class InfoCliente
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents AtualizarBT As System.Windows.Forms.Button
     Friend WithEvents CancelarIMG As System.Windows.Forms.PictureBox
+    Friend WithEvents IDPet As System.Windows.Forms.TextBox
+    Friend WithEvents AtualizarPetBT As System.Windows.Forms.Button
 End Class

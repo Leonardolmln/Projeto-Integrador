@@ -20,7 +20,7 @@
             End If
 
             If (currentFornecedor Is Nothing) Then
-                MsgBox("Não foi encontrado nenhum fornecedor com a pesquisa realizada", vbInformation)
+                MsgBox("Não foi encontrado nenhum fornecedor com a pesquisa realizada", vbInformation Or vbMsgBoxSetForeground)
                 Exit Sub
             Else : InfoFornecedor.Show()
             End If

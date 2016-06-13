@@ -25,28 +25,22 @@
     End Sub
 
     Private Sub AdicionarServicoBT_Click(sender As Object, e As EventArgs) Handles AdicionarServicoBT.Click
-        If (TipoCB.Text = "") Then
+        If (String.IsNullOrWhiteSpace(TipoCB.Text)) Then
             MsgBox("Tipo do serviço não preenchido")
             Exit Sub
-        End If
-
-        If (ValorTF.Text = "") Then
+        ElseIf (String.IsNullOrWhiteSpace(ValorTF.Text)) Then
             MsgBox("Valor do serviço não preenchido")
             Exit Sub
-        End If
-
-        If (DataServicoMTF.Text = "") Then
+        ElseIf (String.IsNullOrWhiteSpace(DataServicoMTF.Text)) Then
             MsgBox("Data do serviço não preenchido")
             Exit Sub
-        End If
-
-        If (CPFMTF.Text = "") Then
+        ElseIf (String.IsNullOrWhiteSpace(CPFMTF.Text)) Then
             MsgBox("CPF do cliente não preenchido")
             Exit Sub
         End If
 
         If (TipoCB.Text = TipoServico.Consulta OrElse TipoCB.Text = TipoServico.ReConsulta) Then
-            If (VeterinarioCB.Text = "") Then
+            If (String.IsNullOrWhiteSpace(VeterinarioCB.Text)) Then
                 MsgBox("Veterinário não selecionado")
                 Exit Sub
             End If
@@ -63,7 +57,7 @@
         If (ServicoBCInstance.ValidateForModification(servico) = True) Then
 
             If (ServicoDAOInstance.Insert(servico) = True) Then
-                MsgBox("Serviço adicionado", vbInformation)
+                MsgBox("Serviço adicionado", vbInformation Or vbMsgBoxSetForeground)
                 TipoCB.Text = ""
                 VeterinarioCB.Text = ""
                 ValorTF.Text = ""

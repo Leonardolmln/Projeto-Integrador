@@ -26,7 +26,7 @@
             End If
 
             If (currentMovimento Is Nothing) Then
-                MsgBox("Não foi encontrada nota fiscal com os parâmetros informados", vbInformation)
+                MsgBox("Não foi encontrada nota fiscal com os parâmetros informados", vbInformation Or vbMsgBoxSetForeground)
                 Exit Sub
             Else : InfoNF.Show()
             End If

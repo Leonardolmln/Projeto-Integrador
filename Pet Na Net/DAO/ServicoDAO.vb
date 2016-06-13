@@ -52,6 +52,8 @@ Public Class ServicoDAO
         End If
         conn.AddParameter("@id", servico.ID)
 
+        Me.FinalizarServico(servico.ID, servico.Status)
+
         Return conn.ExecuteCommand(strSQL.ToString)
 
     End Function
@@ -144,6 +146,9 @@ Public Class ServicoDAO
 
         Dim dt As DataTable = conn.ExecuteSelect(query.ToString)
 
+        If (dt Is Nothing) Then Return Nothing
+        If (dt.Rows.Count = 0) Then Return Nothing
+
         Dim servico As New Servico()
         servico.ID = dt.Rows(0).Item("Id")
         servico.DataCriacao = CDate(dt.Rows(0).Item("DataCriacao"))
@@ -182,9 +187,11 @@ Public Class ServicoDAO
 
         strSQL.Append("Update Servicos ")
         strSQL.Append("SET DataFinalizacao = @dtFinal, ")
+        strSQL.Append("IdFuncionarioFinal = @idFunc, ")
         strSQL.Append("Status = @status ")
         strSQL.Append("WHERE Id = @id;")
 
+        conn.AddParameter("@idFunc", Home.CurrentUser.ID)
         conn.AddParameter("@dtFinal", Now)
         conn.AddParameter("@status", status)
         conn.AddParameter("@id", id)

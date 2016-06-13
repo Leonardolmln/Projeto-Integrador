@@ -37,7 +37,7 @@
                 BuscaFornecedor.currentFornecedor = FornecedorDAOInstance.FindByCNPJ(CNPJMTF.Text)
                 InfoFornecedor.Show()
             Else
-                MsgBox("Inclusão não efetuada", vbCritical)
+                MsgBox("Inclusão não efetuada", vbCritical Or vbMsgBoxSetForeground)
             End If
             Exit Sub
         End If

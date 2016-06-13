@@ -3,6 +3,7 @@
     Private ClienteDAOInstance As New ClienteDAO
     Private ClienteBCInstance As New ClienteBC
     Private PetDAOInstance As New PetDAO
+    Private PetBCInstance As New PetBC
 
     Private Sub InfoCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -66,12 +67,14 @@
     End Sub
 
     Private Sub PetCB_SelectedIndexChanged(sender As Object, e As EventArgs) Handles PetCB.SelectedIndexChanged
-        If (PetCB.Text = "") Then
+        If (String.IsNullOrWhiteSpace(PetCB.Text)) Then
+            IDPet.Text = ""
             NomePetTF.Text = ""
             NascTF.Text = ""
             TipoPetCB.Text = ""
         Else
             Dim pet As Pet = BuscaCliente.currentCliente.Pets.Find(Function(obj) obj.Nome = PetCB.Text)
+            IDPet.Text = pet.ID
             NomePetTF.Text = pet.Nome
             NascTF.Text = pet.Nascimento
             TipoPetCB.Text = pet.TipoPet
@@ -102,7 +105,7 @@
 
             If (ClienteDAOInstance.Update(updtCliente) = True) Then
                 Me.UpdateInfo()
-                MsgBox("Atualização efetuada", vbInformation)
+                MsgBox("Atualização efetuada", vbInformation Or vbMsgBoxSetForeground)
             Else : MsgBox("Ocorreu um problema na inserção dos dados na base, tente novamente")
             End If
         Else : MsgBox("Um Problema ocorreu durante a validação dos dados do cliente, tente novamente")
@@ -120,12 +123,36 @@
 
                 If (ClienteDAOInstance.Update(BuscaCliente.currentCliente) = True) Then
                     Me.UpdateInfo()
-                    MsgBox("Atualização efetuada", vbInformation)
+                    MsgBox("Atualização efetuada", vbInformation Or vbMsgBoxSetForeground)
                 Else : MsgBox("Ocorreu um problema na inserção dos dados na base, tente novamente")
                 End If
             Else : MsgBox("Um Problema ocorreu durante a validação dos dados do cliente, tente novamente")
             End If
 
+        End If
+    End Sub
+
+    Private Sub AtualizarPetBT_Click(sender As Object, e As EventArgs) Handles AtualizarPetBT.Click
+        Dim pet As New Pet()
+        pet.ID = IDPet.Text
+        pet.Nome = NomePetTF.Text
+        pet.Nascimento = NascTF.Text
+        pet.TipoPet = TipoPetCB.Text
+        pet.Dono = BuscaCliente.currentCliente
+        PetDAOInstance.Update(pet)
+
+        If (PetBCInstance.ValidateForModification(pet) = True) Then
+
+            If (PetDAOInstance.Update(pet) = True) Then
+                Try
+                    BuscaCliente.currentCliente.Pets = PetDAOInstance.FindByIDCliente(BuscaCliente.currentCliente.ID)
+                Catch ex As Exception
+                End Try
+                Me.UpdateInfo()
+                MsgBox("Pet Atualizado", vbInformation Or vbMsgBoxSetForeground)
+            Else : MsgBox("Ocorreu um problema na inserção dos dados na base, tente novamente")
+            End If
+        Else : MsgBox("Um Problema ocorreu durante a validação dos dados do cliente, tente novamente")
         End If
     End Sub
 End Class

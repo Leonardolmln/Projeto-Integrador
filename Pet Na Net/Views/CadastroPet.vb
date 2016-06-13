@@ -17,8 +17,8 @@ Public Class CadastroPet
 
     Private Sub CadastrarPetBT_Click(sender As Object, e As EventArgs) Handles CadastrarPetBT.Click
 
-        If (NomePetTF.Text = "") Then
-            MsgBox("Nome do Pet não informado", vbInformation)
+        If (String.IsNullOrWhiteSpace(NomePetTF.Text)) Then
+            MsgBox("Nome do Pet não informado", vbInformation Or vbMsgBoxSetForeground)
             Exit Sub
         End If
 

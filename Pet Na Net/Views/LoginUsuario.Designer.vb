@@ -33,9 +33,6 @@ Partial Class LoginUsuario
         Me.PasswordLabel = New System.Windows.Forms.Label()
         Me.PasswordTF = New System.Windows.Forms.TextBox()
         Me.LoginBT = New System.Windows.Forms.Button()
-        Me.ConfirmPasswordTF = New System.Windows.Forms.TextBox()
-        Me.ConfirmPasswordLB = New System.Windows.Forms.Label()
-        Me.RegistroLink = New System.Windows.Forms.LinkLabel()
         Me.UserTF = New System.Windows.Forms.MaskedTextBox()
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,7 +42,7 @@ Partial Class LoginUsuario
         Me.LogoPictureBox.Image = Global.Pet_Na_Net.My.Resources.Resources.Logo
         Me.LogoPictureBox.Location = New System.Drawing.Point(0, 0)
         Me.LogoPictureBox.Name = "LogoPictureBox"
-        Me.LogoPictureBox.Size = New System.Drawing.Size(165, 193)
+        Me.LogoPictureBox.Size = New System.Drawing.Size(165, 159)
         Me.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.LogoPictureBox.TabIndex = 0
         Me.LogoPictureBox.TabStop = False
@@ -79,41 +76,11 @@ Partial Class LoginUsuario
         '
         'LoginBT
         '
-        Me.LoginBT.Location = New System.Drawing.Point(186, 161)
+        Me.LoginBT.Location = New System.Drawing.Point(239, 118)
         Me.LoginBT.Name = "LoginBT"
         Me.LoginBT.Size = New System.Drawing.Size(94, 23)
         Me.LoginBT.TabIndex = 4
         Me.LoginBT.Text = "Login"
-        '
-        'ConfirmPasswordTF
-        '
-        Me.ConfirmPasswordTF.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ConfirmPasswordTF.Location = New System.Drawing.Point(174, 124)
-        Me.ConfirmPasswordTF.Name = "ConfirmPasswordTF"
-        Me.ConfirmPasswordTF.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.ConfirmPasswordTF.Size = New System.Drawing.Size(220, 21)
-        Me.ConfirmPasswordTF.TabIndex = 3
-        Me.ConfirmPasswordTF.Visible = False
-        '
-        'ConfirmPasswordLB
-        '
-        Me.ConfirmPasswordLB.Location = New System.Drawing.Point(173, 100)
-        Me.ConfirmPasswordLB.Name = "ConfirmPasswordLB"
-        Me.ConfirmPasswordLB.Size = New System.Drawing.Size(220, 23)
-        Me.ConfirmPasswordLB.TabIndex = 6
-        Me.ConfirmPasswordLB.Text = "Confirmar Senha"
-        Me.ConfirmPasswordLB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ConfirmPasswordLB.Visible = False
-        '
-        'RegistroLink
-        '
-        Me.RegistroLink.AutoSize = True
-        Me.RegistroLink.Location = New System.Drawing.Point(315, 166)
-        Me.RegistroLink.Name = "RegistroLink"
-        Me.RegistroLink.Size = New System.Drawing.Size(63, 13)
-        Me.RegistroLink.TabIndex = 5
-        Me.RegistroLink.TabStop = True
-        Me.RegistroLink.Text = "Registrar-se"
         '
         'UserTF
         '
@@ -128,11 +95,8 @@ Partial Class LoginUsuario
         Me.AcceptButton = Me.LoginBT
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(401, 194)
+        Me.ClientSize = New System.Drawing.Size(401, 161)
         Me.Controls.Add(Me.UserTF)
-        Me.Controls.Add(Me.RegistroLink)
-        Me.Controls.Add(Me.ConfirmPasswordTF)
-        Me.Controls.Add(Me.ConfirmPasswordLB)
         Me.Controls.Add(Me.LoginBT)
         Me.Controls.Add(Me.PasswordTF)
         Me.Controls.Add(Me.PasswordLabel)
@@ -149,9 +113,6 @@ Partial Class LoginUsuario
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ConfirmPasswordTF As System.Windows.Forms.TextBox
-    Friend WithEvents ConfirmPasswordLB As System.Windows.Forms.Label
-    Friend WithEvents RegistroLink As System.Windows.Forms.LinkLabel
     Friend WithEvents UserTF As System.Windows.Forms.MaskedTextBox
 
 End Class

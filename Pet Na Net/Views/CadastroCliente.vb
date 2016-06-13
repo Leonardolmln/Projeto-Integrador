@@ -36,7 +36,7 @@
             If (MsgBox("Este CPF já está cadastrado no banco de dados, deseja ir até a tela de cadastro desse cliente", vbYesNo) = vbYes) Then
                 BuscaCliente.currentCliente = ClienteDAOInstance.FindByCPF(CPFMTF.Text)
                 InfoCliente.Show()
-            Else : MsgBox("Inclusão não efetuada", vbCritical)
+            Else : MsgBox("Inclusão não efetuada", vbCritical Or vbMsgBoxSetForeground)
             End If
 
             Exit Sub

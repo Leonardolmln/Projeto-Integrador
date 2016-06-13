@@ -30,7 +30,6 @@ Partial Class InfoNF
         Me.TipoProduto = New System.Windows.Forms.DataGridViewComboBoxColumn()
         Me.ValorUnitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Quantidade = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AtualizarNFBT = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.FornecedorCB = New System.Windows.Forms.ComboBox()
         Me.AddFornecedorIMG = New System.Windows.Forms.PictureBox()
@@ -54,10 +53,9 @@ Partial Class InfoNF
         '
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel3.Controls.Add(Me.ProdutosDT)
-        Me.Panel3.Controls.Add(Me.AtualizarNFBT)
         Me.Panel3.Location = New System.Drawing.Point(12, 216)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(533, 203)
+        Me.Panel3.Size = New System.Drawing.Size(533, 155)
         Me.Panel3.TabIndex = 17
         '
         'ProdutosDT
@@ -114,15 +112,6 @@ Partial Class InfoNF
         Me.Quantidade.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Quantidade.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         Me.Quantidade.Width = 68
-        '
-        'AtualizarNFBT
-        '
-        Me.AtualizarNFBT.Location = New System.Drawing.Point(211, 161)
-        Me.AtualizarNFBT.Name = "AtualizarNFBT"
-        Me.AtualizarNFBT.Size = New System.Drawing.Size(113, 23)
-        Me.AtualizarNFBT.TabIndex = 5
-        Me.AtualizarNFBT.Text = "Atualizar Nota Fiscal"
-        Me.AtualizarNFBT.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -234,7 +223,7 @@ Partial Class InfoNF
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(556, 432)
+        Me.ClientSize = New System.Drawing.Size(556, 384)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
@@ -261,7 +250,6 @@ Partial Class InfoNF
     Friend WithEvents TipoProduto As System.Windows.Forms.DataGridViewComboBoxColumn
     Friend WithEvents ValorUnitario As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Quantidade As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AtualizarNFBT As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents FornecedorCB As System.Windows.Forms.ComboBox
     Friend WithEvents AddFornecedorIMG As System.Windows.Forms.PictureBox

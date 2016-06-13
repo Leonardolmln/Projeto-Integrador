@@ -27,23 +27,17 @@
 
     Private Sub CadastrarPetBT_Click(sender As Object, e As EventArgs) Handles CadastrarPetBT.Click
 
-        If (NumNFTF.Text = "") Then
-            MsgBox("Número da NF não preenchido", vbInformation)
+        If (String.IsNullOrWhiteSpace(NumNFTF.Text)) Then
+            MsgBox("Número da NF não preenchido", vbInformation Or vbMsgBoxSetForeground)
             Exit Sub
-        End If
-
-        If (FornecedorCB.SelectedItem.ToString = "") Then
-            MsgBox("Fornecedor não preenchido", vbInformation)
+        ElseIf (String.IsNullOrWhiteSpace(FornecedorCB.SelectedItem.ToString)) Then
+            MsgBox("Fornecedor não preenchido", vbInformation Or vbMsgBoxSetForeground)
             Exit Sub
-        End If
-
-        If (EmissaoTF.Text = "") Then
-            MsgBox("Emissão não preenchido", vbInformation)
+        ElseIf (String.IsNullOrWhiteSpace(EmissaoTF.Text)) Then
+            MsgBox("Emissão não preenchido", vbInformation Or vbMsgBoxSetForeground)
             Exit Sub
-        End If
-
-        If (ProdutosDT.Rows.Count = 0) Then
-            MsgBox("Nenhum produto informado", vbInformation)
+        ElseIf (ProdutosDT.Rows.Count = 0) Then
+            MsgBox("Nenhum produto informado", vbInformation Or vbMsgBoxSetForeground)
             Exit Sub
         End If
 
@@ -79,7 +73,7 @@
 
                 ItemDAOInstance.Insert(item)
 
-                MsgBox("Inserção realizada com sucesso", vbInformation)
+                MsgBox("Inserção realizada com sucesso", vbInformation Or vbMsgBoxSetForeground)
 
             End If
         Next

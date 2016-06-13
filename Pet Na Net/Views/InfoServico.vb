@@ -26,6 +26,7 @@
             StatusCB.Enabled = False
             DataCriacaoMTF.Enabled = False
             ValorTF.Enabled = False
+            DataServicoMTF.Enabled = False
         End If
         If (BuscaServico.currentServico.Veterinario IsNot Nothing) Then
             VeterinarioTF.Text = BuscaServico.currentServico.Veterinario.Nome
@@ -33,17 +34,13 @@
     End Sub
 
     Private Sub AtualizarBT_Click(sender As Object, e As EventArgs) Handles AtualizarBT.Click
-        If (ValorTF.Text = "") Then
+        If (String.IsNullOrWhiteSpace(ValorTF.Text)) Then
             MsgBox("Valor do serviço não preenchido")
             Exit Sub
-        End If
-
-        If (DataServicoMTF.Text = "") Then
+        ElseIf (String.IsNullOrWhiteSpace(DataServicoMTF.Text)) Then
             MsgBox("Data do serviço não preenchido")
             Exit Sub
-        End If
-
-        If (StatusCB.Text = "") Then
+        ElseIf (String.IsNullOrWhiteSpace(StatusCB.Text)) Then
             MsgBox("Status do serviço não preenchido")
             Exit Sub
         End If
@@ -67,7 +64,7 @@
         If (ServicoBCInstance.ValidateForModification(BuscaServico.currentServico) = True) Then
             If (ServicoDAOInstance.Update(BuscaServico.currentServico) = True) Then
                 Me.UpdateInfo()
-                MsgBox("Atualização efetuada", vbInformation)
+                MsgBox("Atualização efetuada", vbInformation Or vbMsgBoxSetForeground)
             Else : MsgBox("Ocorreu um problema na inserção dos dados na base, tente novamente")
             End If
         Else : MsgBox("Um Problema ocorreu durante a validação dos dados do serviço, tente novamente")
