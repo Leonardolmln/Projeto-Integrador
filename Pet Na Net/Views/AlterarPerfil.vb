@@ -4,7 +4,7 @@
     Public Shared funcionarioDAO As New FuncionarioDAO
 
     Private Sub AlterarPerfil_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TipoFuncionario.GetStatus().ForEach(Sub(sts) PerfilCB.Items.Add(sts))
+        TipoFuncionario.GetStatus().ForEach(Sub(sts) If (sts <> TipoFuncionario.Veterinario) Then PerfilCB.Items.Add(sts))
     End Sub
 
     Private Sub AlterarPerfil_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
@@ -68,5 +68,9 @@
         currentFuncionario.Perfil = PerfilCB.Text
         funcionarioDAO.UpdatePerfil(currentFuncionario)
         MsgBox("Perfil do funcionário atualizado", vbInformation OrElse vbMsgBoxSetForeground)
+    End Sub
+
+    Private Sub PerfilCB_SelectedIndexChanged(sender As Object, e As EventArgs) Handles PerfilCB.SelectedIndexChanged
+
     End Sub
 End Class
